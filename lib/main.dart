@@ -34,6 +34,7 @@ class _NaverWebViewState extends State<NaverWebView> {
           InAppWebView(
             initialUrlRequest: URLRequest(url: WebUri("https://www.naver.com")),
             initialSettings: InAppWebViewSettings(
+              // 안드로이드와 iOS에서 하드웨어 키보드 지원
             ),
             onWebViewCreated: (controller) {
               _webViewController = controller;
